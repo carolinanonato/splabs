@@ -1,0 +1,22 @@
+@import '../Variables/variables.scss';
+
+.btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: $darkGreen;
+    padding: 12px 32px;
+    gap: 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $lightGreen;
+}

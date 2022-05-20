@@ -1,0 +1,72 @@
+@import '../Variables/variables.scss';
+
+.hero-component {
+
+    background-image: url(../Assets/images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.hero-component:before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../Assets/images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: grayscale(100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+}
+
+.hero {
+    position: relative;
+
+    .hero-text {
+        width: 640px;
+        margin-left: 100px;
+
+        h1 {
+            color: $white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 72px;
+            margin-top: 200px;
+            letter-spacing: -0.015em;
+        }
+
+        p {
+            font-family: 'Roboto';
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;
+            margin: 16px 0 16px;
+
+        }
+
+        span {
+            font-family: 'Bodoni Moda', serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 79px;
+            line-height: 72px;
+            letter-spacing: -0.015em;
+
+
+        }
+    }
+
+}

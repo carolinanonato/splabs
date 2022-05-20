@@ -11,8 +11,8 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    padding: 42px 8%;
-    background-color: $darkGray;
+    margin: 42px 100px;
+
 
     .logo {
         font-family: 'Montserrat', sans-serif;
@@ -20,6 +20,7 @@ nav {
         font-weight: 800;
         font-size: 24px;
         width: 64px;
+        line-height: 23px;
 
     }
 
