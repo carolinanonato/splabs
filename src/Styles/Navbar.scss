@@ -1,0 +1,38 @@
+@import '../Variables/variables.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 42px 8%;
+    background-color: $darkGray;
+
+    .logo {
+        font-family: 'Montserrat', sans-serif;
+        color: $white;
+        font-weight: 800;
+        font-size: 24px;
+        width: 64px;
+
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        color: $white;
+        margin-left: 32px;
+
+    }
+
+    li:hover {
+        color: $lightGreen;
+    }
+}
