@@ -26,10 +26,19 @@ function Form() {
 
                     onChange={(e) => setEmail(e.target.value)} />
 
-                <input placeholder='Seu segmento'
 
-                    onChange={(e) => setSegment(e.target.value)} />
+                <select onChange={(e) => setSegment(e.target.value)} >
+                    <option value="">Seu segmento</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+
+                </select>
+
+
+
                 <textarea placeholder='Fale um pouco sobre o seu negócio'
+
 
                     onChange={(e) => setMessage(e.target.value)}></textarea>
 
