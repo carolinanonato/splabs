@@ -1,13 +1,26 @@
-import React from 'react'
-import '../Styles/Cases.scss'
+import axios from "axios";
+import React from "react";
 
+const baseURL = "https://sp-labs.vercel.app/api/cases";
 function Cases() {
-    return (
-        <div class="cases-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempora assumenda non temporibus voluptatum incidunt dicta, recusandae atque quidem fugiat consequuntur inventore accusamus aut saepe ipsum tenetur, nostrum fuga quia!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis autem voluptatum soluta corrupti dignissimos debitis, quaerat cumque suscipit reprehenderit aliquid rerum dolores nobis veritatis, placeat facere aliquam repellendus quo perspiciatis.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam commodi sunt porro vel sint magni aliquid itaque delectus. Optio et quas voluptatem ut vero aut perspiciatis, ab magnam vitae itaque.
-        </div>
-    )
-}
 
+    const [solution, setSolution] = React.useState(null);
+
+    React.useEffect(() => {
+        axios.get(baseURL).then((response) => {
+            setSolution(response.data);
+        });
+    }, []);
+
+
+    return (
+        <div>
+            <h1>{solution}</h1>
+
+        </div>
+    );
+
+
+
+}
 export default Cases

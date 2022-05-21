@@ -1,0 +1,34 @@
+@import '../Variables/variables.scss';
+
+.video-component {
+    margin-top: 30px;
+    background-color: #F8F8F8;
+    display: flex;
+
+    .video-text {
+        width: 536px;
+        height: 234px;
+        margin-left: 100px;
+        margin-top: 112px;
+    }
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        color: $darkGray;
+        font-size: 36px;
+        line-height: 152%;
+        font-style: bold;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        color: $darkGray;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 16px
+    }
+
+    iframe {
+        margin: 80px 100px 80px 48px
+    }
+}

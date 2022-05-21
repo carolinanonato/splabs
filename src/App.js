@@ -1,5 +1,6 @@
 import Hero from "./Components/Hero";
 import Cases from "./Components/Cases";
+import Video from "./Components/Video";
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Hero />
       <Cases />
+      <Video />
 
     </div>
   );
