@@ -9,7 +9,8 @@
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    background-color: $darkGreen;
+    background-color: $lightGreen;
+
     padding: 12px 32px;
     gap: 8px;
     border-radius: 4px;
@@ -18,5 +19,5 @@
 }
 
 .btn:hover {
-    background-color: $lightGreen;
+    background-color: $darkGreen;
 }
