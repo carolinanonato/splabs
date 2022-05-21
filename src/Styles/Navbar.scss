@@ -30,10 +30,14 @@ nav {
         font-family: 'Roboto', sans-serif;
         color: $white;
         margin-left: 32px;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
 
     }
 
     li:hover {
-        color: $lightGreen;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+
     }
 }
