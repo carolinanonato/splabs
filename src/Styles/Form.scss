@@ -76,6 +76,10 @@
         align-items: flex-start;
     }
 
+    input[type=checkbox] {
+        accent-color: $darkGreen;
+    }
+
     label {
         margin-left: 16px;
         font-family: 'Roboto', sans-serif;
