@@ -11,6 +11,8 @@
         height: 234px;
         margin-left: 100px;
         margin-top: 112px;
+        padding-bottom: 0;
+
     }
 
     h2 {
@@ -31,5 +33,50 @@
 
     iframe {
         margin: 80px 100px 80px 48px
+    }
+}
+
+
+
+//***** TABLET MEDIA QUERY ***** //
+
+@media screen and (max-width: 800px) {
+    .video-component {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+
+        .video-text {
+            width: auto;
+            margin-right: 31px;
+            margin-left: 31px;
+
+        }
+
+
+        h2 {
+
+            width: auto;
+            font-size: 32px;
+            margin: auto;
+
+        }
+
+
+        p {
+            max-width: 70vh;
+        }
+
+        iframe {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 330px;
+            height: 191px;
+
+            margin: 32px 31px 80px 31px
+        }
     }
 }

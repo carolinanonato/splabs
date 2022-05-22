@@ -35,7 +35,7 @@ function CasesCard(props) {
         <div className="cases-component">
             <h3>{props.title}</h3>
             <p>{props.description}</p>
-            <button>acesse<span class="material-symbols-outlined">
+            <button>acesse<span className="material-symbols-outlined">
                 arrow_forward
             </span></button>
 

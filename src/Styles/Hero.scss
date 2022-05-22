@@ -15,6 +15,7 @@
 .hero {
     position: relative;
 
+
     .hero-text {
         width: 640px;
         margin-left: 100px;
@@ -48,6 +49,27 @@
             letter-spacing: -0.015em;
 
 
+        }
+    }
+
+}
+
+//***** TABLET MEDIA QUERY ***** //
+
+@media screen and (max-width: 800px) {
+
+    .hero {
+
+
+        .hero-text {
+            width: auto;
+            margin-left: 30px;
+
+            h1 {
+                width: auto;
+                font-size: 50px;
+
+            }
         }
     }
 

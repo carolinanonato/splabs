@@ -45,3 +45,12 @@ nav {
 
     }
 }
+
+//***** TABLET MEDIA QUERY ***** //
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        margin: 0px 30px;
+    }
+}

@@ -87,3 +87,26 @@
     }
 
 }
+
+//***** TABLET MEDIA QUERY ***** //
+
+@media screen and (max-width: 800px) {
+
+    .footer-component {
+
+
+        .footer-wrapper {
+            margin: 80px 50px;
+        }
+
+        .links-wrapper {
+            margin-left: 30px;
+            gap: 50px;
+        }
+
+        .credits {
+            margin: 0px 50px;
+            padding: 80px 0px;
+        }
+    }
+}

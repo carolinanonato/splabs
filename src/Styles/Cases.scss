@@ -85,3 +85,26 @@
     }
 
 }
+
+//***** TABLET MEDIA QUERY ***** //
+
+@media screen and (max-width: 800px) {
+
+    .cases-container {
+        margin: 80px 30px;
+        width: auto;
+
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 64px;
+            width: auto;
+        }
+    }
+
+    .cases-component {
+        padding: 0 30px;
+    }
+
+
+}
