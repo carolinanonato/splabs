@@ -1,4 +1,87 @@
+@import '../Variables/variables.scss';
+
+
 .cases-container {
-    position: absolute;
-    background-color: white;
+    width: 540px;
+    margin: 80px 100px;
+    font-family: 'Roboto', sans-serif;
+
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 64px;
+        width: 500px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    span {
+        text-decoration: line-through;
+    }
+
+}
+
+.cases {
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+}
+
+
+.cases-component {
+    flex: 50%;
+    padding: 0 100px;
+    font-family: 'Roboto', sans-serif;
+    width: 524px;
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 16px;
+
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.015em;
+        margin-bottom: 16px;
+
+
+    }
+
+    p:last-of-type {
+        max-width: 524px;
+
+    }
+
+    button {
+        background-color: $white;
+        border: 1px solid #C4C4C4;
+        color: #343434;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        text-transform: uppercase;
+        padding: 8px 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 80px;
+
+    }
+
 }

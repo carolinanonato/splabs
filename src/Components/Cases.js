@@ -1,23 +1,15 @@
-import axios from "axios";
-import React from "react";
+import '../Styles/Cases.scss'
+import CasesCard from './CasesCard';
 
-const baseURL = "https://sp-labs.vercel.app/api/cases";
 function Cases() {
 
-    // const [solution, setSolution] = React.useState(null);
-
-    // React.useEffect(() => {
-    //     axios.get(baseURL).then((response) => {
-    //         setSolution(response.data);
-    //     });
-    // }, []);
-
-
     return (
-        <div>
-            {/* <h1>{solution}</h1> */}
+        <div className="cases-container">
+            <h2>Problemas complexos. Soluções <span>complexas</span> criativas_</h2>
+            <p>Confira nossos cases de sucesso que vão além do mundo jurídico.</p>
 
         </div>
+
     );
 
 

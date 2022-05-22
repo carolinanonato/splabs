@@ -1,35 +1,16 @@
 @import '../Variables/variables.scss';
 
 .hero-component {
-    background-image: url(../Assets/images/hero-bg.jpg);
+    background-image: url(../Assets/images/hero-bg.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 826px;
+    height: 100vh;
 
 }
 
-.hero-component:before {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(../Assets/images/hero-bg.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: grayscale(100%);
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 900px;
-
-
-}
 
 .hero {
     position: relative;
