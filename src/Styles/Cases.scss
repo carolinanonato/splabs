@@ -108,3 +108,24 @@
 
 
 }
+
+
+//***** MOBILE MEDIA QUERY ***** //
+
+@media screen and (max-width: 390px) {
+    .cases-container {
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+    }
+
+    .cases-component {
+        button {
+            margin-bottom: 40px;
+        }
+    }
+}

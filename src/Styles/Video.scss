@@ -80,3 +80,26 @@
         }
     }
 }
+
+//***** MOBILE MEDIA QUERY ***** //
+
+@media screen and (max-width: 390px) {
+    .video-component {
+
+        .video-text {
+            margin-top: 80px;
+
+        }
+
+        h2 {
+            line-height: 64px;
+
+        }
+
+
+        iframe {
+            margin-top: 64px;
+        }
+
+    }
+}

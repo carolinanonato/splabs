@@ -110,3 +110,76 @@
         }
     }
 }
+
+
+//***** MOBILE MEDIA QUERY ***** //
+
+@media screen and (max-width: 390px) {
+    .footer-component {
+
+
+        .footer-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: ce;
+            margin: 80px 100px;
+            justify-content: center;
+            width: auto;
+
+            .logo {
+                align-self: center;
+                margin-bottom: 64px;
+            }
+
+        }
+
+        .links-wrapper {
+            flex-direction: column;
+
+            margin: 0 30px;
+
+            h4 {
+                text-align: center;
+                margin-left: 0;
+            }
+
+            h5 {
+                text-align: center;
+                width: max-content;
+            }
+
+            .sp-links {
+                margin-right: 0px;
+
+                h4 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 13px;
+                }
+
+                a {
+
+                    justify-content: center;
+
+                }
+            }
+
+        }
+
+        .credits {
+            margin: auto;
+            width: 350px;
+
+
+        }
+
+
+
+
+
+
+
+    }
+}

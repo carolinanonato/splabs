@@ -102,3 +102,33 @@
         margin: 0px 30px;
     }
 }
+
+
+
+@media screen and (max-width: 390px) {
+
+    .form-component {
+        form {
+            width: auto;
+        }
+    }
+}
+
+//***** MOBILE MEDIA QUERY ***** //
+
+@media screen and (max-width: 390px) {
+
+    .form-component {
+        background: radial-gradient(49.9% 23.09% at 0% 100%, #5DFED6 0%, rgba(93, 254, 214, 0) 100%);
+        margin: 0;
+
+        form {
+            margin: 32px 30px 80px;
+        }
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+}
