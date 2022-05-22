@@ -81,8 +81,27 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 80px;
+        transition: all 0.9s ease;
+        cursor: pointer;
 
     }
+
+    button:hover {
+        border: 1px solid $darkGray;
+
+
+        span {
+            transition: all 0.9s ease;
+        }
+
+        span:hover {
+            transform: translateX(4px)
+        }
+
+
+    }
+
+
 
 }
 
