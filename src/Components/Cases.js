@@ -1,5 +1,4 @@
 import '../Styles/Cases.scss'
-import CasesCard from './CasesCard';
 
 function Cases() {
 

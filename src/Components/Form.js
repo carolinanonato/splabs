@@ -11,9 +11,9 @@ function Form() {
 
 
     return (
-        <div className='form-component'>
+        <div className='form'>
             <h2>Não fique parado, fale conosco</h2>
-            <form className="form">
+            <form className="form__form-module">
 
 
                 <input
@@ -42,7 +42,7 @@ function Form() {
 
                     onChange={(e) => setMessage(e.target.value)}></textarea>
 
-                <div className="checkbox">
+                <div className="form__checkbox">
                     <input type="checkbox"
 
                         onChange={(e) => setCheckbox(e.target.value)} />

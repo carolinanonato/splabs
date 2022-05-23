@@ -1,6 +1,6 @@
 @import '../Variables/variables.scss';
 
-.form-component {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
     background: radial-gradient(25.07% 41.67% at 30.63% 88.91%, #5DFED6 0%, rgba(93, 254, 214, 0) 100%);
 
 
-    form {
+    &__form-module {
         display: flex;
         flex-direction: column;
         width: 420px;
@@ -70,7 +70,7 @@
 
 
 
-    .checkbox {
+    &__checkbox {
         display: flex;
 
         align-items: flex-start;
@@ -102,7 +102,7 @@
 
 @media screen and (max-width: 800px) {
 
-    .form-component {
+    .form {
         margin: 0px 30px;
     }
 }
@@ -111,8 +111,8 @@
 
 @media screen and (max-width: 390px) {
 
-    .form-component {
-        form {
+    .form {
+        &__form-module {
             width: auto;
         }
     }
@@ -122,11 +122,11 @@
 
 @media screen and (max-width: 390px) {
 
-    .form-component {
+    .form {
         background: radial-gradient(49.9% 23.09% at 0% 100%, #5DFED6 0%, rgba(93, 254, 214, 0) 100%);
         margin: 0;
 
-        form {
+        &__form-module {
             margin: 32px 30px 80px;
         }
 
