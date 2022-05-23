@@ -1,49 +1,38 @@
+import React, { useState, useEffect } from 'react'
 import '../Styles/Cases.scss'
 
+import axios from 'axios'
 
-// import axios from "axios";
-// import React, { useEffect, useState } from "react";
+function CasesCard() {
+    const [cases, setCases] = useState([]);
 
-// const baseURL = "https://sp-labs.vercel.app/api/cases";
-function CasesCard(props) {
+    useEffect(() => {
+        const casesInfo = async () => {
+            const response = await axios('https://sp-labs.vercel.app/api/cases');
 
-    // const [solution, setSolution] = useState(null);
+            setCases(response.data.cases);
+        };
+        casesInfo();
+    }, []);
 
-    // const fetchApi = async () => {
-    //     try {
-    //         const resp = await axios(baseURL, {
-    //             headers: {
-    //                 Accept: 'application/json'
-    //             }
-    //         });
-    //         console.log(resp);
-    //     } catch (error) {
-
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     axios.get(`${baseURL}`).then((response) => {
-    //         console.log(response)
-    //         // setSolution(response.data);
-    //     });
-    // }, []);
-
-
-    return (
-
-        <div className="cases-component">
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
+    const useCasesInfos = cases.map((cases) => {
+        return <div className="cases-component">
+            <h3>{cases.title}</h3>
+            <p>{cases.description}</p>
             <button>acesse<span className="material-symbols-outlined">
                 arrow_forward
             </span></button>
 
         </div>
+    })
 
+    return (
+        <>
+            <div className="cases">
+                {useCasesInfos}
+            </div>
+        </>
     );
-
-
-
 }
-export default CasesCard
+
+export default CasesCard;
