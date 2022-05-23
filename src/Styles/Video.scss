@@ -1,12 +1,12 @@
 @import '../Variables/variables.scss';
 
-.video-component {
+.video {
     margin-top: 30px;
     background-color: #F8F8F8;
     display: flex;
     justify-content: center;
 
-    .video-text {
+    &__text {
         width: 536px;
         height: 234px;
         margin-left: 100px;
@@ -41,13 +41,13 @@
 //***** TABLET MEDIA QUERY ***** //
 
 @media screen and (max-width: 800px) {
-    .video-component {
+    .video {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         justify-content: center;
 
-        .video-text {
+        &__text {
             width: auto;
             margin-right: 31px;
             margin-left: 31px;
@@ -84,9 +84,9 @@
 //***** MOBILE MEDIA QUERY ***** //
 
 @media screen and (max-width: 390px) {
-    .video-component {
+    .video {
 
-        .video-text {
+        &__text {
             margin-top: 80px;
 
         }

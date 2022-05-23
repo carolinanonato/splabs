@@ -3,8 +3,8 @@ import '../Styles/Video.scss'
 
 function Video() {
     return (
-        <div className='video-component'>
-            <div className="video-text">
+        <div className='video'>
+            <div className="video__text">
                 <h2>Quem são, o que fazem, onde vivem?</h2>
                 <p>Não precisa embedar o vídeo do Rick Astley Remastered 4k 60 FPS, pode ser qualquer outro vídeo da sua escolha, mas queremos dar play.</p>
             </div>
