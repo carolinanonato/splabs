@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../Styles/Form.scss'
 import Button from './Button';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Form() {
     const [name, setName] = useState("");
@@ -11,7 +12,7 @@ function Form() {
 
 
     return (
-        <div className='form'>
+        <div className='form' id="form">
             <h2>Não fique parado, fale conosco</h2>
             <form className="form__form-module">
 
