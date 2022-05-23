@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import '../Styles/Form.scss'
-import Button from './Button';
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import Popup from './Popup';
 
 function Form() {
     const [name, setName] = useState("");
@@ -10,6 +9,18 @@ function Form() {
     const [message, setMessage] = useState("");
     const [checkbox, setCheckbox] = useState("");
 
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const togglePopup = () => {
+        setIsOpen(!isOpen);
+    }
+
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
     return (
         <div className='form' id="form">
@@ -50,7 +61,22 @@ function Form() {
                     <label> Declaro que conheço a Política de Privacidade e autorizo a utilização das minhas informações pelo SP Labs</label>
                 </div>
 
-                <Button label={"enviar"} />
+                <input
+                    className='btn'
+                    type="button"
+                    value="Enviar"
+                    onClick={togglePopup}
+                />
+
+                {isOpen && <Popup
+                    content={<>
+
+                        <p>Obrigado pelo contato $nome!</p>
+
+                    </>}
+                    handleClose={togglePopup}
+                />}
+
 
             </form>
         </div>
