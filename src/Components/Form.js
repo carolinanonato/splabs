@@ -10,31 +10,62 @@ function Form() {
     const [checkbox, setCheckbox] = useState("");
 
 
+
+    // ****Open and Close Popup **** //
     const [isOpen, setIsOpen] = useState(false);
 
     const togglePopup = () => {
         setIsOpen(!isOpen);
     }
 
+    //**** Submit form data ****//
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            let res = await fetch("https://sp-labs.vercel.app/api/contact", {
+                method: "POST",
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    segment: segment,
+                    message: message,
+                    checkbox: checkbox
+
+                }),
+            });
+            let resJson = await res.json();
+            if (res.status === 200) {
+                setName("");
+                setEmail("");
+                setSegment("");
+                setMessage("Message sent!");
+            } else {
+                setMessage("Some error occured");
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-    }
 
     return (
         <div className='form' id="form">
             <h2>Não fique parado, fale conosco</h2>
-            <form className="form__form-module">
+            <form onSubmit={handleSubmit} className="form__form-module">
 
 
                 <input
                     placeholder='Seu Nome'
-
+                    type="text"
+                    value={name}
                     onChange={(e) => setName(e.target.value)} />
 
 
                 <input placeholder='Seu email'
+                    type="text"
+                    value={email}
 
                     onChange={(e) => setEmail(e.target.value)} />
 
@@ -50,8 +81,6 @@ function Form() {
 
 
                 <textarea placeholder='Fale um pouco sobre o seu negócio'
-
-
                     onChange={(e) => setMessage(e.target.value)}></textarea>
 
                 <div className="form__checkbox">
@@ -71,7 +100,7 @@ function Form() {
                 {isOpen && <Popup
                     content={<>
 
-                        <p>Obrigado pelo contato $nome!</p>
+                        <p>Obrigado pelo contato {name}!</p>
 
                     </>}
                     handleClose={togglePopup}
