@@ -1,6 +1,6 @@
 @import '../Variables/variables.scss';
 
-.hero-component {
+.hero {
     background-image: url(../Assets/images/hero-bg.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -10,14 +10,13 @@
     height: 100vh;
     background-position: center top;
 
-}
 
+    &__wrapper {
+        position: relative;
 
-.hero {
-    position: relative;
+    }
 
-
-    .hero-text {
+    &__text {
         width: 640px;
         margin-left: 100px;
 
@@ -53,6 +52,8 @@
         }
     }
 
+
+
 }
 
 //***** TABLET MEDIA QUERY ***** //
@@ -61,8 +62,10 @@
 
     .hero {
 
+        &__wrapper {}
 
-        .hero-text {
+
+        &__text {
             width: auto;
             margin-left: 30px;
 
@@ -72,8 +75,8 @@
 
             }
         }
-    }
 
+    }
 }
 
 //***** MOBILE MEDIA QUERY ***** //
@@ -82,7 +85,9 @@
 
     .hero {
 
-        .hero-text {
+        &__wrapper {}
+
+        &__text {
             margin-right: 30px;
 
             h1 {
@@ -99,6 +104,6 @@
 
             }
         }
-    }
 
+    }
 }

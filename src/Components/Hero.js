@@ -6,10 +6,10 @@ import Button from '../Components/Button'
 function Hero() {
     return (
         <>
-            <div className='hero-component'>
-                <div className="hero">
+            <div className='hero'>
+                <div className="hero__wrapper">
                     <Navbar />
-                    <div className="hero-text">
+                    <div className="hero__text">
                         <h1>Imagine, crie, implemente e <span>evolua</span></h1>
                         <p>Porque não basta resolver apenas os conflitos do mundo do direito.</p>
                         <Button label={"inicie a sua jornada"} />
