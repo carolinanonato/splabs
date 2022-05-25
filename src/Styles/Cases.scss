@@ -135,6 +135,11 @@
 
     .cases-component {
         padding: 0 30px;
+
+        p {
+            width: auto;
+        }
+
     }
 
 
@@ -147,6 +152,8 @@
     .cases-container {
         h2 {
             font-size: 32px;
+
+
         }
 
         p {

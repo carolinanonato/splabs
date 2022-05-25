@@ -172,7 +172,7 @@
         &__wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: ce;
+            justify-content: center;
             margin: 80px auto;
             justify-content: center;
             width: 250px;
@@ -195,9 +195,8 @@
                 margin-left: 0;
             }
 
-            h5 {
+            li {
                 text-align: center;
-                // width: max-content;
                 justify-content: center;
 
             }
@@ -215,7 +214,7 @@
                 margin-bottom: 13px;
             }
 
-            a {
+            li {
 
                 justify-content: center;
 
