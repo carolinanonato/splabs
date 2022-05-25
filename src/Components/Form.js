@@ -56,7 +56,7 @@ function Form() {
 
 
                 <input
-                    placeholder='Seu Nome'
+                    placeholder='Seu nome'
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)} />
