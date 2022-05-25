@@ -34,7 +34,7 @@ function Form() {
 
                 }),
             });
-            let resJson = await res.json();
+
             if (res.status === 200) {
                 setName("");
                 setEmail("");
@@ -47,8 +47,6 @@ function Form() {
             console.log(err);
         }
     };
-
-
 
     return (
         <div className='form' id="form">
@@ -66,7 +64,6 @@ function Form() {
                 <input placeholder='Seu email'
                     type="text"
                     value={email}
-
                     onChange={(e) => setEmail(e.target.value)} />
 
 
@@ -75,17 +72,13 @@ function Form() {
                     <option value="dog">Dog</option>
                     <option value="cat">Cat</option>
                     <option value="hamster">Hamster</option>
-
                 </select>
-
-
 
                 <textarea placeholder='Fale um pouco sobre o seu negócio'
                     onChange={(e) => setMessage(e.target.value)}></textarea>
 
                 <div className="form__checkbox">
                     <input type="checkbox"
-
                         onChange={(e) => setCheckbox(e.target.value)} />
                     <label> Declaro que conheço a Política de Privacidade e autorizo a utilização das minhas informações pelo SP Labs</label>
                 </div>
@@ -98,15 +91,9 @@ function Form() {
                 />
 
                 {isOpen && <Popup
-                    content={<>
-
-                        <p>Obrigado pelo contato {name}!</p>
-
-                    </>}
+                    content={<><p>Obrigado pelo contato {name}!</p></>}
                     handleClose={togglePopup}
                 />}
-
-
             </form>
         </div>
     )
