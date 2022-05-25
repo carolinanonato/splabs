@@ -15,8 +15,8 @@ function CasesCard() {
         casesInfo();
     }, []);
 
-    const useCasesInfos = cases.map((cases) => {
-        return <div className="cases-component">
+    const useCasesInfos = cases.map((cases, key) => {
+        return <div key={key} className="cases-component">
             <h3>{cases.title}</h3>
             <p>{cases.description}</p>
             <button>acesse<span className="material-symbols-outlined arrow">

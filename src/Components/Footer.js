@@ -10,13 +10,13 @@ function Footer() {
                 <div className="footer__links-wrapper">
                     <div className="footer__splabs-links">
                         <h4>SP Labs</h4>
-                        <h5>Política de Privacidade</h5>
+                        <li><h5>Política de Privacidade</h5></li>
                     </div>
                     <div className="footer__sp-links">
                         <h4>Sem Processo</h4>
-                        <a href="https://www.semprocesso.com.br/">Site</a>
-                        <a href="https://www.semprocesso.com.br/#produtos">Produtos</a>
-                        <a href="https://www.semprocesso.com.br/blog">Blog</a>
+                        <li><a href="https://www.semprocesso.com.br/">Site</a></li>
+                        <li><a href="https://www.semprocesso.com.br/#produtos">Produtos</a></li>
+                        <li><a href="https://www.semprocesso.com.br/blog">Blog</a></li>
                     </div>
                 </div>
             </div>
