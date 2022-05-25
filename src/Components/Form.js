@@ -70,9 +70,10 @@ function Form() {
 
                 <select onChange={(e) => setSegment(e.target.value)} >
                     <option value="">Seu segmento</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
+                    <option value="educacao">Educação</option>
+                    <option value="comercio">Comércio</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="comunicacao">Comunicação</option>
                 </select>
 
                 <textarea placeholder='Fale um pouco sobre o seu negócio'
