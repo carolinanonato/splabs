@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../Styles/Form.scss'
 import Popup from './Popup';
 
+
 function Form() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -39,9 +40,9 @@ function Form() {
                 setName("");
                 setEmail("");
                 setSegment("");
-                setMessage("Message sent!");
+                setMessage("Mensagem enviada!");
             } else {
-                setMessage("Some error occured");
+                setMessage("Algum erro aconteceu, tente novamente.");
             }
         } catch (err) {
             console.log(err);

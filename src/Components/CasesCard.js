@@ -19,7 +19,7 @@ function CasesCard() {
         return <div className="cases-component">
             <h3>{cases.title}</h3>
             <p>{cases.description}</p>
-            <button>acesse<span className="material-symbols-outlined">
+            <button>acesse<span className="material-symbols-outlined arrow">
                 arrow_forward
             </span></button>
 
